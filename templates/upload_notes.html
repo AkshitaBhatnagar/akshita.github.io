@@ -1,0 +1,64 @@
+{% extends 'user_nav.html' %}
+{% load static %}
+{% block body %}
+
+
+
+<div class="container mt=5">
+    <h2 class="text-center">UPLOAD NOTES</h2>
+
+    <div class="row">
+
+
+        <HR>
+         <div class="col-sm-6">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <label>Branch</label>
+
+
+            <label>Subject</label>
+            <input type="text" class="form-control" name="subject">
+
+            <label>File</label>
+            <input type="file" class="form-control" name="notesfile">
+
+            <label>File Type</label>
+            <select class="form-control" name="filetype">
+                <option value="">Select File Type</option>
+                <option value="PDF">PDF</option>
+                <option value="DOCX">DOCX</option>
+                <option value="TXT">TXT</option>
+                <option value="ZIP">ZIP</option>
+                <option value="IMAGE">IMAGE</option>
+
+            </select>
+
+            <label>Description</label>
+            <textarea class="form-control" name="description"></textarea>
+
+
+
+            <input type="submit" class="btn btn-primary mt-2" value="SUBMIT..">
+        </form>
+    </div>
+        <div class="col-sm-6">
+        <img src="{% static 'images/aa.jpg' %}" style="width:90%;height:400px" class="mt-2">
+    </div>
+</div>
+</div>
+
+    {%  ifequal error "no" %}
+<script>
+    alert('File Uploaded Successfully');
+
+</script>
+{% endifequal %}
+
+{% ifequal error "yes" %}
+<script>
+    alert('Oops...Something wrong!, Try Again');
+</script>
+{% endifequal %}
+{% endblock%}

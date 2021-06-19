@@ -1,0 +1,291 @@
+{% extends 'navigation.html' %}
+{% block body %}
+{% load static %}
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.bootstrap4.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+
+<div style="background-color : green ; width : 100% ; height:100px">
+        <h2 class="text-center text-white container pt-3">Video Lectures Links</h2>
+</div>
+</div>
+
+
+<div class="container">
+         <img src="{% static 'images\v.png'%}"  style="width:100%; height:100px" >
+
+    <hr>
+
+<script>
+    $(document).ready(function()  {
+    $ ('#example').DataTable();
+    }  );
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>
+<br>
+    <br>
+    <br>
+
+    <div class="row">
+  <div class="column">
+    <div class="card">
+        <a href="#1st"><h3>1st Year</h3></a>
+        <hr>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <a href="#2nd"><h3>2nd Year</h3></a>
+        <hr>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <a href="#3rd"><h3>3rd Year</h3></a>
+        <hr>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <a href="#4th"><h3>4th Year</h3></a>
+        <hr>
+    </div>
+  </div>
+</div>
+<br>
+    <br>
+
+<u><h1 class="text-center text-Black container pt-3" id="1st"><b>1st Year</h1></u>
+
+
+
+    <table class="table table-bordered" id="example">
+        <thead>
+        <tr>
+             <th>S.No.</th>
+             <th>Subject Name</th>
+             <th>Video Link</th>
+
+        </tr>
+        </thead>
+<tr>
+        <td>1.</td>
+        <td>C Programming</td>
+        <td><a href="https://www.youtube.com/playlist?list=PLe_7x5eaUqtWp9fvsxhC4XIkoR3n5A-sF" target="_blank"><button>C Programming</button></a></td>
+    </tr>
+ <tr>
+        <td>2.</td>
+        <td>Data Structures</td>
+        <td><a href="https://www.youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi" target="_blank"><button>Data Structures</button></a></td>
+    </tr>
+ <tr>
+        <td>3.</td>
+        <td>HTML</td>
+        <td><a href="https://www.w3schools.com/html/" target="_blank"><button>HTML</button></a></td>
+    </tr>
+        <tr>
+        <td>4.</td>
+        <td>Basic Electronics</td>
+        <td><a href="https://www.youtube.com/playlist?list=PLL13-1PjGvanUxa4XI5qGaGdrHSORZ-n-" target="_blank"><button>Electronics</button></a></td>
+    </tr>
+        <tr>
+        <td>5.</td>
+        <td>Basic Electrical Engg.</td>
+        <td><a href="https://www.youtube.com/playlist?list=PL9RcWoqXmzaLTYUdnzKhF4bYug3GjGcEc" target="_blank"><button>Electrical</button></a></td>
+    </tr>
+
+
+    </table>
+
+<br>
+    <br>
+
+
+<u><h1 class="text-center text-Black container pt-3" id="2nd"><b>2nd Year</h1></u>
+
+
+
+    <table class="table table-bordered" id="example">
+        <thead>
+        <tr>
+             <th>S.No.</th>
+             <th>Subject Name</th>
+             <th>Video Link</th>
+
+        </tr>
+        </thead>
+<tr>
+        <td>1.</td>
+        <td>C++</td>
+        <td><a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL" target="_blank"><button>C++</button></a></td>
+    </tr>
+ <tr>
+        <td>2.</td>
+        <td>Operating System</td>
+        <td><a href="https://www.youtube.com/playlist?list=PLmXKhU9FNesSFvj6gASuWmQd23Ul5omtD" target="_blank" ><button>Opearting System</button></a></td>
+    </tr>
+ <tr>
+        <td>3.</td>
+        <td>Automata</td>
+        <td><a href="https://www.youtube.com/playlist?list=PLmXKhU9FNesSdCsn6YQqu9DmXRMsYdZ2T" target="_blank" ><button>TOC</button></a></td>
+    </tr>
+    <tr>
+        <td>4.</td>
+        <td>Discrete Mathematics</td>
+        <td><a href="https://www.youtube.com/results?search_query=discrete+mathematics+sanchit+jain" target="_blank"><button>Disscrete Mathematics</button></a></td>
+    </tr>
+     <tr>
+        <td>5.</td>
+        <td>Computer Organization and Architecture</td>
+        <td><a href="https://www.youtube.com/playlist?list=PLmXKhU9FNesS4B30OmgxP7nrzq1UhiMiv" target="_blank"><button>COA</button></a></td>
+    </tr>
+
+    </table>
+
+    <br>
+    <br>
+
+
+<u><h1 class="text-center text-Black container pt-3" id="3rd"><b>3rd Year</h1></u>
+
+
+
+    <table class="table table-bordered" id="example">
+        <thead>
+        <tr>
+             <th>S.No.</th>
+             <th>Subject Name</th>
+             <th>Video Link</th>
+
+        </tr>
+        </thead>
+<tr>
+        <td>1.</td>
+        <td>CSS</td>
+        <td><a href="https://www.w3schools.com/css/" target="_blank"><button>CSS</button></a></td>
+    </tr>
+ <tr>
+        <td>2.</td>
+        <td>Python</td>
+        <td><a href="https://www.youtube.com/playlist?list=PLwgFb6VsUj_lQTpQKDtLXKXElQychT_2j" target="_blank"><button>Python</button></a></td>
+    </tr>
+ <tr>
+        <td>3.</td>
+        <td>Compiler Design</td>
+        <td><a href="https://www.youtube.com/playlist?list=PLmXKhU9FNesSmu-_DKC7APRoFkaQvGurx" target="_blank"><button>Compiler Design</button></a></td>
+    </tr>
+    <tr>
+        <td>4.</td>
+        <td>DBMS</td>
+        <td><a href="https://www.youtube.com/playlist?list=PLmXKhU9FNesR1rSES7oLdJaNFgmuj0SYV" target="_blank"><button>DBMS</button></a></td>
+    </tr>
+     <tr>
+        <td>5.</td>
+        <td>Distributed System</td>
+        <td><a href="https://www.youtube.com/playlist?list=PL-JvKqQx2AtdBuhyvazfDL-sIwbA7iTbr" target="_blank"><button>Distributed System</button></a></td>
+    </tr>
+     <tr>
+        <td>6.</td>
+        <td>Database Management System</td>
+        <td><a href="https://www.youtube.com/playlist?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_" target="_blank"><button>Computer Network</button></a></td>
+    </tr>
+
+    </table>
+
+
+    <br>
+    <br>
+
+
+<u><h1 class="text-center text-Black container pt-3" id="4th"><b>4th Year</h1></u>
+
+
+
+    <table class="table table-bordered" id="example">
+        <thead>
+        <tr>
+             <th>S.No.</th>
+             <th>Subject Name</th>
+             <th>Video Link</th>
+
+        </tr>
+        </thead>
+        <tr>
+        <td>1.</td>
+        <td>Cloud Computing</td>
+        <td><a href="https://www.youtube.com/playlist?list=PL-JvKqQx2AtfQ8cGyKsFE7Tj2FyB1yCkd" target="_blank"><button>Cloud Computing</button></a>
+        </td>
+    </tr>
+        <td>2.</td>
+        <td>Artificial Intelligence</td>
+        <td><a href="https://www.youtube.com/playlist?list=PLxCzCOWd7aiHGhOHV-nwb0HR5US5GFKFI" target="_blank"><button>Artificial Intelligence</button></a></td>
+    </tr>
+     <tr>
+        <td>3.</td>
+        <td>Data Compression</td>
+        <td><a href="https://www.youtube.com/playlist?list=PLE3xJJEq_shqQdXbiPZq-3Ro31U5Y9qT8" target="_blank"><button>Data Compression</button></a></td>
+    </tr>
+    <tr>
+        <td>4.</td>
+        <td>Distributed System</td>
+        <td><a href="https://www.youtube.com/playlist?list=PL-JvKqQx2AtdBuhyvazfDL-sIwbA7iTbr" target="_blank"><button>Distributed System</button></a></td>
+    </tr>
+
+    </table>
+
+</div>
+
+{% endblock%}

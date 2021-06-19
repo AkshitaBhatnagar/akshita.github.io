@@ -1,0 +1,135 @@
+{% extends 'navigation.html' %}
+{% block body %}
+{% load static %}
+<style>
+img {
+  border-radius: 50%;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+</style>
+
+
+<center><b><i><h1 class="mt-4"><u>Faculties Information</u></h1></i></b></center>
+<br>
+<br>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'images/hod.jpg' %}"  width="300" height="300">
+      <div class="container">
+        <h2>Ankush Gupta</h2>
+        <p class="title">Head of Department</p>
+        <p>B.tech M.Tech <br>9897192496</p>
+        <p>ankush.g.raj@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'images/k.jpg' %}" width="300" height="300">
+      <div class="container">
+        <h2>Kaushal Kumar</h2>
+        <p class="title">Assistant Professor</p>
+        <p>B.tech M.Tech <br>9548129543</p>
+        <p>kaushalcs.niit@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'images/pppp.jpg' %}"  width="300" height="300">
+      <div class="container">
+        <h2>Devendra Singh Mohan</h2>
+        <p class="title">Assistant Professor</p>
+        <p>B.tech M.Tech <br>8006675751</p>
+        <p>abcd@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="column">
+    <div class="card">
+      <img src="{% static 'images/pppp.jpg' %}" width="300" height="300">
+      <div class="container">
+        <h2>Nusrat Parvez</h2>
+        <p class="title">Assistant Professor</p>
+        <p>B.tech M.Tech <br>9520228584</p>
+        <p>nusrat.parvez@gmail.com</p>
+      </div>
+    </div>
+  </div>
+    <div class="column">
+    <div class="card">
+      <img src="{% static 'images/pppp.jpg' %}"  width="300" height="300">
+      <div class="container">
+        <h2>Sumbul Haq</h2>
+        <p class="title">Assistant Professor</p>
+        <p>B.tech M.Tech <br>8937995896</p>
+        <p>abcd@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock%}

@@ -1,0 +1,302 @@
+{% extends 'navigation.html' %}
+{% block body %}
+{% load static %}
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.bootstrap4.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+<link rel="stylesheet" href="https://cdnjs.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+<div style="background-color : green ; width : 100% ; height:100px">
+        <h2 class="text-center text-white container pt-3">Book Links</h2>
+</div>
+
+
+<div class="container">
+         <img src="{% static 'images\bo.jpg'%}"  style="width:100%; height:100px" >
+
+    <hr>
+
+<script>
+    $(document).ready(function()  {
+    $ ('#example').DataTable();
+    }  );
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>
+<br>
+    <br>
+    <br>
+
+    <div class="row">
+  <div class="column">
+    <div class="card">
+        <a href="#1st"><h3>1st Year</h3></a>
+        <hr>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <a href="#2nd"><h3>2nd Year</h3></a>
+        <hr>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <a href="#3rd"><h3>3rd Year</h3></a>
+        <hr>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <a href="#4th"><h3>4th Year</h3></a>
+        <hr>
+    </div>
+  </div>
+</div>
+<br>
+    <br>
+
+<u><h1 class="text-center text-Black container pt-3" id="1st"><b>1st Year</h1></u>
+
+
+
+    <table class="table table-bordered" id="example">
+        <thead>
+        <tr>
+             <th>S.No.</th>
+             <th>Subject Name</th>
+             <th>Book Link</th>
+
+        </tr>
+        </thead>
+<tr>
+        <td>1.</td>
+        <td>C Programming</td>
+        <td><a href="https://en.wikibooks.org/wiki/C_Programming">C Book</a></td>
+    </tr>
+ <tr>
+        <td>2.</td>
+        <td>Operating System</td>
+        <td><a href="https://www.cl.cam.ac.uk/teaching/1011/OpSystems/os1a-slides.pdf">OS Book</a></td>
+    </tr>
+ <tr>
+        <td>3.</td>
+        <td>Data Structres</td>
+        <td><a href="https://www.cs.bham.ac.uk/~jxb/DSA/dsa.pdf">DS Book</a></td>
+    </tr>
+    <tr>
+        <td>4.</td>
+        <td>Artificial Intellegence</td>
+        <td><a href="https://www.cin.ufpe.br/~tfl2/artificial-intelligence-modern-approach.9780131038059.25368.pdf">AI Book</a></td>
+    </tr>
+     <tr>
+        <td>5.</td>
+        <td>Design and analysis of Algorithm</td>
+        <td><a href="https://courses.cs.duke.edu/fall08/cps230/Book.pdf">DAA Book</a></td>
+    </tr>
+     <tr>
+        <td>6.</td>
+        <td>Database Management System</td>
+        <td><a href="https://mrcet.com/downloads/digital_notes/ECE/III%20Year/DATABASE%20MANAGEMENT%20SYSTEMS.pdf">DBMS Book</a></td>
+    </tr>
+    </table>
+
+<br>
+    <br>
+
+
+<u><h1 class="text-center text-Black container pt-3" id="2nd"><b>2nd Year</h1></u>
+
+
+
+    <table class="table table-bordered" id="example">
+        <thead>
+        <tr>
+             <th>S.No.</th>
+             <th>Subject Name</th>
+             <th>Book Link</th>
+
+        </tr>
+        </thead>
+<tr>
+        <td>1.</td>
+        <td>C Programming</td>
+        <td><a href="https://en.wikibooks.org/wiki/C_Programming">C Book</a></td>
+    </tr>
+ <tr>
+        <td>2.</td>
+        <td>Operating System</td>
+        <td><a href="https://www.cl.cam.ac.uk/teaching/1011/OpSystems/os1a-slides.pdf">OS Book</a></td>
+    </tr>
+ <tr>
+        <td>3.</td>
+        <td>Data Structres</td>
+        <td><a href="https://www.cs.bham.ac.uk/~jxb/DSA/dsa.pdf">DS Book</a></td>
+    </tr>
+    <tr>
+        <td>4.</td>
+        <td>Artificial Intellegence</td>
+        <td><a href="https://www.cin.ufpe.br/~tfl2/artificial-intelligence-modern-approach.9780131038059.25368.pdf">AI Book</a></td>
+    </tr>
+     <tr>
+        <td>5.</td>
+        <td>Design and analysis of Algorithm</td>
+        <td><a href="https://courses.cs.duke.edu/fall08/cps230/Book.pdf">DAA Book</a></td>
+    </tr>
+     <tr>
+        <td>6.</td>
+        <td>Database Management System</td>
+        <td><a href="https://mrcet.com/downloads/digital_notes/ECE/III%20Year/DATABASE%20MANAGEMENT%20SYSTEMS.pdf">DBMS Book</a></td>
+    </tr>
+
+    </table>
+
+    <br>
+    <br>
+
+
+<u><h1 class="text-center text-Black container pt-3" id="3rd"><b>3rd Year</h1></u>
+
+
+
+    <table class="table table-bordered" id="example">
+        <thead>
+        <tr>
+             <th>S.No.</th>
+             <th>Subject Name</th>
+             <th>Book Link</th>
+
+        </tr>
+        </thead>
+<tr>
+        <td>1.</td>
+        <td>C Programming</td>
+        <td><a href="https://en.wikibooks.org/wiki/C_Programming">C Book</a></td>
+    </tr>
+ <tr>
+        <td>2.</td>
+        <td>Operating System</td>
+        <td><a href="https://www.cl.cam.ac.uk/teaching/1011/OpSystems/os1a-slides.pdf">OS Book</a></td>
+    </tr>
+ <tr>
+        <td>3.</td>
+        <td>Data Structres</td>
+        <td><a href="https://www.cs.bham.ac.uk/~jxb/DSA/dsa.pdf">DS Book</a></td>
+    </tr>
+    <tr>
+        <td>4.</td>
+        <td>Artificial Intellegence</td>
+        <td><a href="https://www.cin.ufpe.br/~tfl2/artificial-intelligence-modern-approach.9780131038059.25368.pdf">AI Book</a></td>
+    </tr>
+     <tr>
+        <td>5.</td>
+        <td>Design and analysis of Algorithm</td>
+        <td><a href="https://courses.cs.duke.edu/fall08/cps230/Book.pdf">DAA Book</a></td>
+    </tr>
+     <tr>
+        <td>6.</td>
+        <td>Database Management System</td>
+        <td><a href="https://mrcet.com/downloads/digital_notes/ECE/III%20Year/DATABASE%20MANAGEMENT%20SYSTEMS.pdf">DBMS Book</a></td>
+    </tr>
+
+    </table>
+
+
+    <br>
+    <br>
+
+
+<u><h1 class="text-center text-Black container pt-3" id="4th"><b>4th Year</h1></u>
+
+
+
+    <table class="table table-bordered" id="example">
+        <thead>
+        <tr>
+             <th>S.No.</th>
+             <th>Subject Name</th>
+             <th>Book Link</th>
+
+        </tr>
+        </thead>
+<tr>
+        <td>1.</td>
+        <td>C Programming</td>
+        <td><a href="https://en.wikibooks.org/wiki/C_Programming">C Book</a></td>
+    </tr>
+ <tr>
+        <td>2.</td>
+        <td>Operating System</td>
+        <td><a href="https://www.cl.cam.ac.uk/teaching/1011/OpSystems/os1a-slides.pdf">OS Book</a></td>
+    </tr>
+ <tr>
+        <td>3.</td>
+        <td>Data Structres</td>
+        <td><a href="https://www.cs.bham.ac.uk/~jxb/DSA/dsa.pdf">DS Book</a></td>
+    </tr>
+    <tr>
+        <td>4.</td>
+        <td>Artificial Intellegence</td>
+        <td><a href="https://www.cin.ufpe.br/~tfl2/artificial-intelligence-modern-approach.9780131038059.25368.pdf">AI Book</a></td>
+    </tr>
+     <tr>
+        <td>5.</td>
+        <td>Design and analysis of Algorithm</td>
+        <td><a href="https://courses.cs.duke.edu/fall08/cps230/Book.pdf">DAA Book</a></td>
+    </tr>
+     <tr>
+        <td>6.</td>
+        <td>Database Management System</td>
+        <td><a href="https://mrcet.com/downloads/digital_notes/ECE/III%20Year/DATABASE%20MANAGEMENT%20SYSTEMS.pdf">DBMS Book</a></td>
+    </tr>
+
+    </table>
+
+
+
+{% endblock%}

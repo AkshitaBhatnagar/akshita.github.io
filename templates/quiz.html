@@ -1,0 +1,120 @@
+
+
+
+{% extends 'user_nav.html' %}
+{% load static %}
+{% block body %}
+<head>
+    <script type="text/javascript" src=""quiz.js></script>
+</head>
+<style>
+.container{
+background-color: #e6eb86;
+color:black;
+font-size:20px;
+}
+</style>
+
+<script>
+ function check(){
+    var q1=document.myform.q1.value;
+    var q2=document.myform.q2.value;
+    var q3=document.myform.q3.value;
+    var q4=document.myform.q4.value;
+    var q5=document.myform.q5.value;
+    var q6=document.myform.q6.value;
+    var q7=document.myform.q7.value;
+    var count=0;
+
+    if(q1=="A")
+    {
+    count++;
+    }
+    if(q2=="A")
+    {
+    count++;
+    }
+    if(q3=="A")
+    {
+    count++;
+    }
+    if(q4=="A")
+    {
+    count++;
+    }
+    if(q5=="A")
+    {
+    count++;
+    }
+    if(q6=="A")
+    {
+    count++;
+    }
+    if(q7=="A")
+    {
+    count++;
+    }
+    if(count<=6){alert("Oops! Failed. Your Score is ="+count+"  ");}
+    else {alert("Congratulations! Paased. Your Score is ="+count+" ");}
+    }
+</script>
+
+
+<body>
+
+<div style="background-color : green ; width : 100% ; height:100px">
+        <h2 class="text-center text-white  pt-3">Let's play Quiz</h2>
+</div>
+
+<div class="container">
+<form name="myform" action="mailto:akshi17bha@gmail.com" method="post">
+    Q1.Who is the author of C?<br>
+    <input type="radio" name="q1" value="A">1).Denis Ritchi<br>
+     <input type="radio" name="q1" value="B">2).James Gosling<br>
+     <input type="radio" name="q1" value="C">3).Denis <br>
+     <input type="radio" name="q1" value="D">4).Ritchi<br>
+<br>
+      Q2.Who is the author of C?<br>
+    <input type="radio" name="q2" value="A">1).Denis Ritchi<br>
+     <input type="radio" name="q2" value="B">2).James Gosling<br>
+     <input type="radio" name="q2" value="C">3).Denis <br>
+     <input type="radio" name="q2" value="D">4).Ritchi<br>
+<br>
+      Q3.Who is the author of C?<br>
+    <input type="radio" name="q3" value="A">1).Denis Ritchi<br>
+     <input type="radio" name="q3" value="B">2).James Gosling<br>
+     <input type="radio" name="q3" value="C">3).Denis <br>
+     <input type="radio" name="q3" value="D">4).Ritchi<br>
+<br>
+      Q4.Who is the author of C?<br>
+    <input type="radio" name="q4" value="A">1).Denis Ritchi<br>
+     <input type="radio" name="q4" value="B">2).James Gosling<br>
+     <input type="radio" name="q4" value="C">3).Denis <br>
+     <input type="radio" name="q4" value="D">4).Ritchi<br>
+<br>
+      Q5.Who is the author of C?<br>
+    <input type="radio" name="q5" value="A">1).Denis Ritchi<br>
+     <input type="radio" name="q5" value="B">2).James Gosling<br>
+     <input type="radio" name="q5" value="C">3).Denis <br>
+     <input type="radio" name="q5" value="D">4).Ritchi<br>
+<br>
+      Q6.Who is the author of C?<br>
+    <input type="radio" name="q6" value="A">1).Denis Ritchi<br>
+     <input type="radio" name="q6" value="B">2).James Gosling<br>
+     <input type="radio" name="q6" value="C">3).Denis <br>
+     <input type="radio" name="q6" value="D">4).Ritchi<br>
+<br>
+      Q7.Who is the author of C?<br>
+    <input type="radio" name="q7" value="A">1).Denis Ritchi<br>
+     <input type="radio" name="q7" value="B">2).James Gosling<br>
+     <input type="radio" name="q7" value="C">3).Denis <br>
+     <input type="radio" name="q7" value="D">4).Ritchi<br>
+<br>
+    <br>
+<input type="button" class="btn btn-primary mt-2" value="Submit" onclick="check()">
+
+</form>
+</div>
+
+</body>
+{% endblock%}
